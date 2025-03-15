@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel Bansikah - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M8 4 L4 16 L8 28' fill='none' stroke='%23ed7513' stroke-width='4'/%3E%3Cpath d='M24 4 L28 16 L24 28' fill='none' stroke='%2300b7eb' stroke-width='4'/%3E%3C/svg%3E">
+    <!-- Google Fonts: Space Grotesk, Space Mono, Bungee Shade, Major Mono Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Major+Mono+Display&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Noel Bansikah</div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Bansikah!</h1>
+            <p>A charismatic Fullstack Software Engineer, DevOps Engineer, and seasoned technical writer.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn hire-btn">Hire Me</a>
+                <!-- <a href="assets/cv.pdf" class="btn cv-btn" download>Download CV</a> -->
+            </div>
+        </div>
+        <div class="profile-img-container">
+            <div class="ring skyblue-ring">
+                <div class="ring orange-ring">
+                    <img src="assets/profile.jpeg" alt="Noel Bansikah" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider right-dots"></div>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="content">
+            <p>Igniting Transformation Through Technology and Passion</p>
+            <p>With a diligent approach and an eye for detail, I create robust software applications that seamlessly blend functionality and user experience...</p>
+        </div>
+    </section>
+
+    <div class="section-divider left-dots"></div>
+
+    <!-- Experience (Roadmap Style) -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Associate Fullstack Software Engineer</h3>
+                    <p>Adorsys | Sep 2024 - Present · 7 mos</p>
+                    <p>Germany (Remote) | Full-time</p>
+                    <p>As an Associate Full Stack Developer at Adorsys, I work on developing and maintaining both the front-end and back-end of web applications, utilizing modern technologies and frameworks. I collaborate with cross-functional teams to design, build, and deploy scalable solutions, ensuring a seamless user experience and high-performance functionality. I contribute to innovative projects in the financial technology space while growing my skills in this dynamic environment.</p>
+                    <p><strong>Skills:</strong> DevSecOps, Back-End Web Development, +4 skills</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Trainee</h3>
+                    <p>Adorsys | Sep 2023 - Sep 2024 · 1 yr 1 mo</p>
+                    <p>Baden-Württemberg, Germany | Contract</p>
+                    <p>Worked as a trainee, gaining hands-on experience in software development and related technologies.</p>
+                    <p><strong>Skills:</strong> Flask Python, Maven, +14 skills</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Software Engineer (Internship)</h3>
+                    <p>Pefscom | Feb 2022 - Mar 2025 · 3 yrs 2 mos</p>
+                    <p>Buea, Southwest, Cameroon | Internship</p>
+                    <p>Developed software solutions as part of an internship, focusing on practical application of development skills.</p>
+                    <p><strong>Skills:</strong> PHP, Front-End Development, +2 skills</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider right-dots"></div>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div id="project-list" class="content project-grid"></div>
+    </section>
+
+    <div class="section-divider left-dots"></div>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <div class="content cert-grid">
+            <div class="cert-card">
+                <h3>Java OCFA Foundation</h3>
+                <p>Oracle</p>
+                <p><strong>Skills:</strong> Logic, JRE, Analytic Problem Solving, Mathematics, JDK</p>
+                <div class="cert-divider"><span></span><span></span><span></span></div>
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=2E7AFBE1A9672B03280C6C810336570E3B13DEF44067CC680E59356B555E32D1" target="_blank" class="btn cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>Certified Linux Administrator (LPIC-1)</h3>
+                <p>Linux</p>
+                <div class="cert-divider"><span></span><span></span><span></span></div>
+                <a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000596401/hrmbc2nzvb" target="_blank" class="btn cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>K3s</h3>
+                <p>Rancher</p>
+                <p><strong>Skills:</strong> K3S</p>
+                <div class="cert-divider"><span></span><span></span><span></span></div>
+                <a href="https://www.rancher.academy/certificates/os5aowzdla" target="_blank" class="btn cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>AWS Educate Getting Started with Compute</h3>
+                <p>Amazon Web Services (AWS)</p>
+                <div class="cert-divider"><span></span><span></span><span></span></div>
+                <a href="https://www.credly.com/badges/d88f2e57-019f-4ab3-ba43-5734a72a5b1d/public_url" target="_blank" class="btn cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>Introduction to Cloud 101</h3>
+                <p>Amazon Web Services (AWS)</p>
+                <p><strong>Skills:</strong> Cloud Foundation</p>
+                <div class="cert-divider"><span></span><span></span><span></span></div>
+                <a href="https://www.credly.com/badges/48a8668f-b9c7-45fe-a9ad-c1f272f46f1b/public_url" target="_blank" class="btn cert-btn">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <h3>Kubernetes Challenges</h3>
+                <p>KodeKloud</p>
+                <div class="cert-divider"><span></span><span></span><span></span></div>
+                <a href="https://learn.kodekloud.com/user/certificate/5a392ef4-8d8b-48db-a8e6-05ebaae73f59" target="_blank" class="btn cert-btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider right-dots"></div>
+
+    <!-- Articles -->
+    <section id="articles" class="section">
+        <h2>Articles</h2>
+        <div class="articles-container content">
+            <div id="featured-article" class="featured-article"></div>
+            <div id="article-list" class="article-grid"></div>
+        </div>
+    </section>
+
+    <div class="section-divider left-dots"></div>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <i class="fas fa-kite kite-icon"></i>
+                <p><i class="fas fa-map-marker-alt"></i> Cameroon, Bangangte, West</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:tandapnoelbansikah@gmail.com">tandapnoelbansikah@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+237654031227">+237 654 031 227</a></p>
+            </div>
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xjkykkkg" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn send-btn"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="section-divider right-dots"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/tandap-noel-bansikah/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/bansikah22" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://gitlab.com/tandapnoelbansikah" target="_blank"><i class="fab fa-gitlab"></i></a>
+                <a href="https://dev.to/bansikah" target="_blank"><i class="fab fa-dev"></i></a>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2023 Noel Bansikah</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
