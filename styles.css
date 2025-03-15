@@ -96,8 +96,8 @@ body {
 }
 
 .hero h1 {
-    font-size: 3.5rem; /* Increased for desktop */
-    font-family: 'Megrim', cursive; /* Megrim for all devices */
+    font-size: 3.5rem;
+    font-family: 'Megrim', cursive;
     margin-bottom: 15px;
     color: #ffffff;
     letter-spacing: 2px;
@@ -301,7 +301,7 @@ body {
 .cert-divider span {
     width: 8px;
     height: 8px;
-    border-radius介護: 50%;
+    border-radius: 50%;
 }
 
 .cert-divider span:nth-child(1) {
@@ -620,16 +620,35 @@ footer {
         align-items: center;
     }
     .hero h1 {
-        font-size: 2.5rem; /* Increased for mobile */
-        font-family: 'Megrim', cursive; /* Consistent with desktop */
+        font-size: 2.5rem;
+        font-family: 'Megrim', cursive;
         white-space: nowrap;
         justify-content: center;
     }
     .hero h1 .custom-dash {
         width: 50px;
     }
+    .hero-buttons {
+        margin-bottom: 40px; /* Add spacing between Hire Me button and profile picture */
+    }
     .profile-img-container {
-        display: none;
+        width: 200px; /* Smaller size for mobile */
+        height: 200px;
+    }
+    .skyblue-ring {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 15px 8px #a9a9a9, 0 0 30px 15px rgba(169, 169, 169, 0.5);
+    }
+    .orange-ring {
+        width: 170px;
+        height: 170px;
+        box-shadow: 0 0 12px 6px #b0b0b0, 0 0 25px 12px rgba(176, 176, 176, 0.5);
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border: 6px solid #8c8c8c;
     }
     .section h2 {
         font-size: 2rem;
