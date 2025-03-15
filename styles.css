@@ -96,8 +96,28 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem; /* Increased for desktop */
+    font-family: 'Megrim', cursive; /* Megrim for all devices */
     margin-bottom: 15px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.hero h1 .thick-letter {
+    font-weight: 700;
+}
+
+.hero h1 .custom-dash {
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: #ffffff;
+    vertical-align: middle;
 }
 
 .hero p {
@@ -142,14 +162,14 @@ body {
 .skyblue-ring {
     width: 260px;
     height: 260px;
-    box-shadow: 0 0 20px 10px #a9a9a9, 0 0 40px 20px rgba(169, 169, 169, 0.5); /* Darker gray */
+    box-shadow: 0 0 20px 10px #a9a9a9, 0 0 40px 20px rgba(169, 169, 169, 0.5);
     border: none;
 }
 
 .orange-ring {
     width: 220px;
     height: 220px;
-    box-shadow: 0 0 15px 8px #b0b0b0, 0 0 30px 15px rgba(176, 176, 176, 0.5); /* Medium gray */
+    box-shadow: 0 0 15px 8px #b0b0b0, 0 0 30px 15px rgba(176, 176, 176, 0.5);
     border: none;
 }
 
@@ -157,7 +177,7 @@ body {
     width: 190px;
     height: 190px;
     border-radius: 50%;
-    border: 8px solid #8c8c8c; /* Darker gray */
+    border: 8px solid #8c8c8c;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -173,10 +193,18 @@ body {
 
 .section h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #adf802;
     font-family: 'Major Mono Display', monospace;
     letter-spacing: 1px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .content {
@@ -273,7 +301,7 @@ body {
 .cert-divider span {
     width: 8px;
     height: 8px;
-    border-radius: 50%;
+    border-radius介護: 50%;
 }
 
 .cert-divider span:nth-child(1) {
@@ -587,29 +615,27 @@ footer {
     }
     .hero-content {
         margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h1 {
+        font-size: 2.5rem; /* Increased for mobile */
+        font-family: 'Megrim', cursive; /* Consistent with desktop */
+        white-space: nowrap;
+        justify-content: center;
+    }
+    .hero h1 .custom-dash {
+        width: 50px;
     }
     .profile-img-container {
-        width: 200px;
-        height: 200px;
-        margin-top: 0;
-    }
-    .skyblue-ring {
-        width: 200px;
-        height: 200px;
-        box-shadow: 0 0 15px 8px #a9a9a9, 0 0 30px 15px rgba(169, 169, 169, 0.5);
-    }
-    .orange-ring {
-        width: 170px;
-        height: 170px;
-        box-shadow: 0 0 12px 6px #b0b0b0, 0 0 25px 12px rgba(176, 176, 176, 0.5);
-    }
-    .profile-img {
-        width: 150px;
-        height: 150px;
-        border: 6px solid #8c8c8c;
+        display: none;
     }
     .section h2 {
         font-size: 2rem;
+    }
+    .section-subtitle {
+        font-size: 1rem;
     }
     .content {
         text-align: center;
