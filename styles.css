@@ -1,6 +1,6 @@
 body {
     background-color: #02091f;
-    color: white;
+    color: #ffffff;
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
@@ -24,14 +24,14 @@ body {
 .logo {
     font-family: 'Bungee Shade', sans-serif;
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
 .hamburger {
     display: none;
     font-size: 1.5rem;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Major Mono Display', monospace;
@@ -125,11 +125,6 @@ body {
     color: #02091f;
 }
 
-.cv-btn {
-    background-color: #ed7513;
-    color: white;
-}
-
 .profile-img-container {
     position: relative;
     width: 260px;
@@ -147,20 +142,22 @@ body {
 .skyblue-ring {
     width: 260px;
     height: 260px;
-    border: 20px solid #00b7eb;
+    box-shadow: 0 0 20px 10px #a9a9a9, 0 0 40px 20px rgba(169, 169, 169, 0.5); /* Darker gray */
+    border: none;
 }
 
 .orange-ring {
     width: 220px;
     height: 220px;
-    border: 15px solid #ed7513;
+    box-shadow: 0 0 15px 8px #b0b0b0, 0 0 30px 15px rgba(176, 176, 176, 0.5); /* Medium gray */
+    border: none;
 }
 
 .profile-img {
     width: 190px;
     height: 190px;
     border-radius: 50%;
-    border: 8px solid #adf802;
+    border: 8px solid #8c8c8c; /* Darker gray */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -185,12 +182,7 @@ body {
 .content {
     max-width: 900px;
     margin: 0 auto;
-    text-align: left;
     font-family: 'Space Mono', monospace;
-}
-
-#about .content p {
-    font-size: 1.4rem;
 }
 
 /* Timeline (Experience Roadmap) */
@@ -314,6 +306,8 @@ body {
 /* Articles Container */
 .articles-container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     max-width: 900px;
     margin: 0 auto;
     gap: 20px;
@@ -473,7 +467,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.05);
-    color: white;
+    color: #ffffff;
     font-family: 'Space Mono', monospace;
     font-size: 1rem;
 }
@@ -485,7 +479,7 @@ body {
 .contact-form .send-btn {
     background-color: transparent;
     border: 2px solid #adf802;
-    color: white;
+    color: #ffffff;
     border-radius: 25px;
     padding: 12px 20px;
     font-size: 1.2rem;
@@ -591,28 +585,34 @@ footer {
         text-align: center;
         padding: 60px 20px;
     }
+    .hero-content {
+        margin-bottom: 40px;
+    }
     .profile-img-container {
         width: 200px;
         height: 200px;
-        margin-top: 20px;
+        margin-top: 0;
     }
     .skyblue-ring {
         width: 200px;
         height: 200px;
-        border: 15px solid #00b7eb;
+        box-shadow: 0 0 15px 8px #a9a9a9, 0 0 30px 15px rgba(169, 169, 169, 0.5);
     }
     .orange-ring {
         width: 170px;
         height: 170px;
-        border: 10px solid #ed7513;
+        box-shadow: 0 0 12px 6px #b0b0b0, 0 0 25px 12px rgba(176, 176, 176, 0.5);
     }
     .profile-img {
         width: 150px;
         height: 150px;
-        border: 6px solid #adf802;
+        border: 6px solid #8c8c8c;
     }
     .section h2 {
         font-size: 2rem;
+    }
+    .content {
+        text-align: center;
     }
     #about .content p {
         font-size: 1.2rem;
@@ -622,28 +622,32 @@ footer {
     }
     .timeline-item {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px;
         text-align: left;
     }
-    .timeline-item.right {
+    .timeline-item.left, .timeline-item.right {
         left: 0;
+        text-align: left;
     }
     .articles-container {
         flex-direction: column;
+        align-items: center;
     }
-    .featured-article {
-        flex: none;
+    .featured-article, .article-card {
+        width: 100%;
+        max-width: 500px;
     }
     .article-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
+        width: 100%;
     }
     .contact-container {
         flex-direction: column;
     }
     .contact-info {
         padding: 15px;
+        text-align: center;
     }
     .kite-icon {
         font-size: 2.5rem;
@@ -657,7 +661,7 @@ footer {
     .back-to-top {
         width: 40px;
         height: 40px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         bottom: 20px;
         right: 20px;
     }

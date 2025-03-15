@@ -1,12 +1,11 @@
 // Fetch Articles from Dev.to
 async function fetchArticles() {
     const username = "bansikah";
-    const response = await fetch(`https://dev.to/api/articles?username=${username}&per_page=3`); // Fetch 3 articles
+    const response = await fetch(`https://dev.to/api/articles?username=${username}&per_page=3`);
     const articles = await response.json();
     const featuredArticle = document.getElementById("featured-article");
     const articleList = document.getElementById("article-list");
 
-    // Featured Article (First article)
     if (articles.length > 0) {
         const featured = articles[0];
         featuredArticle.innerHTML = `
@@ -16,7 +15,6 @@ async function fetchArticles() {
         `;
     }
 
-    // Remaining Articles (Next 2)
     articles.slice(1, 3).forEach(article => {
         const card = document.createElement("div");
         card.classList.add("article-card");
@@ -61,10 +59,17 @@ backToTop.onclick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-// Hamburger Menu Toggle
+// Hamburger Menu Toggle and Nav Link Click
 const hamburger = document.querySelector(".hamburger");
 const navContainer = document.querySelector(".nav-container");
+const navLinks = document.querySelectorAll(".nav-links a");
 
 hamburger.addEventListener("click", () => {
     navContainer.classList.toggle("active");
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navContainer.classList.remove("active");
+    });
 });
