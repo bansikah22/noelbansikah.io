@@ -579,10 +579,10 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        padding: 15px 20px;
+        padding: 10px 15px;
     }
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .hamburger {
         display: block;
@@ -591,83 +591,83 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
         background-color: rgba(2, 9, 31, 0.95);
-        padding: 20px;
+        padding: 15px;
     }
     .nav-container.active {
         display: flex;
     }
     .nav-links {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
         text-align: center;
     }
     .nav-links a {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 60px 20px;
+        padding: 40px 15px;
     }
     .hero-content {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: 'Megrim', cursive;
         white-space: nowrap;
         justify-content: center;
     }
     .hero h1 .custom-dash {
-        width: 50px;
+        width: 40px;
     }
     .hero-buttons {
-        margin-bottom: 40px; /* Add spacing between Hire Me button and profile picture */
+        margin-bottom: 30px;
     }
     .profile-img-container {
-        width: 200px; /* Smaller size for mobile */
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
     .skyblue-ring {
-        width: 200px;
-        height: 200px;
-        box-shadow: 0 0 15px 8px #a9a9a9, 0 0 30px 15px rgba(169, 169, 169, 0.5);
+        width: 180px;
+        height: 180px;
+        box-shadow: 0 0 10px 5px #a9a9a9, 0 0 20px 10px rgba(169, 169, 169, 0.5);
     }
     .orange-ring {
-        width: 170px;
-        height: 170px;
-        box-shadow: 0 0 12px 6px #b0b0b0, 0 0 25px 12px rgba(176, 176, 176, 0.5);
-    }
-    .profile-img {
         width: 150px;
         height: 150px;
-        border: 6px solid #8c8c8c;
+        box-shadow: 0 0 8px 4px #b0b0b0, 0 0 15px 8px rgba(176, 176, 176, 0.5);
+    }
+    .profile-img {
+        width: 130px;
+        height: 130px;
+        border: 5px solid #8c8c8c;
     }
     .section h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .section-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .content {
         text-align: center;
     }
     #about .content p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .timeline::after {
         display: none;
     }
     .timeline-item {
         width: 100%;
-        padding: 20px;
+        padding: 15px;
         text-align: left;
     }
     .timeline-item.left, .timeline-item.right {
@@ -680,7 +680,7 @@ footer {
     }
     .featured-article, .article-card {
         width: 100%;
-        max-width: 500px;
+        max-width: 400px;
     }
     .article-grid {
         grid-template-columns: 1fr;
@@ -691,24 +691,24 @@ footer {
         flex-direction: column;
     }
     .contact-info {
-        padding: 15px;
+        padding: 10px;
         text-align: center;
     }
     .kite-icon {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .contact-form {
-        padding: 15px;
+        padding: 10px;
     }
     .contact-form .send-btn {
-        padding: 10px 15px;
+        padding: 8px 12px;
     }
     .back-to-top {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-        bottom: 20px;
-        right: 20px;
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+        bottom: 15px;
+        right: 15px;
     }
 }
 
