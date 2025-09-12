@@ -147,42 +147,104 @@ body {
 
 .profile-img-container {
     position: relative;
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ring {
+/* Skill Tags */
+.skill-tag {
     position: absolute;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Space Mono', monospace;
+    z-index: 10;
+    color: #02091f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+}
+
+.software-dev {
+    background-color: #adf802;
+    top: 10px;
+    left: 10px;
+    transform: none;
+}
+
+.cloud-arch {
+    background-color: #ed7513;
+    right: -80px;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+}
+
+.tech-writer {
+    background-color: #00b7eb;
+    bottom: 10px;
+    left: 10px;
+    transform: none;
+}
+
+/* Image Frame - Circular with gray background and shadow-like outer ring */
+.image-frame {
+    position: relative;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    background-color: #c5c2c2; /* Gray background inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #464545; /* Slightly thinner inner ring */
+    box-shadow: 0 0 0 3px #636262, 0 0 0 12px #464545; /* Thicker outer ring like a shadow */
 }
 
-.skyblue-ring {
-    width: 260px;
-    height: 260px;
-    box-shadow: 0 0 20px 10px #a9a9a9, 0 0 40px 20px rgba(169, 169, 169, 0.5);
-    border: none;
+.outer-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
-.orange-ring {
-    width: 220px;
-    height: 220px;
-    box-shadow: 0 0 15px 8px #b0b0b0, 0 0 30px 15px rgba(176, 176, 176, 0.5);
-    border: none;
+.middle-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.inner-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .profile-img {
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    border: 8px solid #8c8c8c;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 45%; /* Slightly less rounded inner border */
     object-fit: cover;
+    position: relative;
+    z-index: 5;
 }
 
 /* Section Styling */
@@ -612,6 +674,7 @@ footer {
         flex-direction: column;
         text-align: center;
         padding: 40px 15px;
+        min-height: auto;
     }
     .hero-content {
         margin-bottom: 30px;
@@ -632,23 +695,7 @@ footer {
         margin-bottom: 30px;
     }
     .profile-img-container {
-        width: 180px;
-        height: 180px;
-    }
-    .skyblue-ring {
-        width: 180px;
-        height: 180px;
-        box-shadow: 0 0 10px 5px #a9a9a9, 0 0 20px 10px rgba(169, 169, 169, 0.5);
-    }
-    .orange-ring {
-        width: 150px;
-        height: 150px;
-        box-shadow: 0 0 8px 4px #b0b0b0, 0 0 15px 8px rgba(176, 176, 176, 0.5);
-    }
-    .profile-img {
-        width: 130px;
-        height: 130px;
-        border: 5px solid #8c8c8c;
+        display: none;
     }
     .section h2 {
         font-size: 1.8rem;
@@ -711,6 +758,7 @@ footer {
         right: 15px;
     }
 }
+
 
 /* Section Divider */
 .section-divider {
